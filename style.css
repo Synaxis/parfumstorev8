@@ -16,7 +16,7 @@ a.nav__link {
 }
 
 div.trick__content {
-  padding: 4px;
+  padding: 8px;
 }
 /*========================= GOOGLE GONTS =========================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;900&display=swap');
@@ -508,7 +508,7 @@ button {
 .trick__content {
     position: relative;
     background: var(--container-color);
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     padding: 1.0rem 0 0.5rem 0;
     text-align: center;
     overflow: hidden;
@@ -518,8 +518,8 @@ button {
 }
 
 .trick__img {
-    width: 45%;
-    transition: .2s;
+    width: 75px;
+    transition: .3s;
 }
 
 .trick__subtitle,
@@ -935,9 +935,9 @@ button {
     }
 
     .trick__container {
-        grid-template-columns: repeat(4, 200px);
+        grid-template-columns: repeat(3, 200px);
         justify-content: center;
-        gap: 1.3rem;
+        gap: 2rem;
     }
 
     .discount__container {
