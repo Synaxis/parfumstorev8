@@ -33,8 +33,8 @@ div.trick__content {
     --text-color: hsl(var(--hue), 4%, 85%);
     --text-color-light:  hsl(var(--hue), 4%, 55%);
 
-  --body-color: linear-gradient(90deg, rgb(49, 148, 165) 0%, hsl(18, 28%, 40%) 100%);
-  --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18deg 23% 70%) 100%); */
+  --body-color: linear-gradient(90deg, rgb(49, 148, 165) 0%, hsl(18deg 12% 52%) 100%);
+  --container-color: linear-gradient(136deg, hsl(0deg 0% 33% / 85%) 0%, hsl(18deg 23% 70%) 100%); */
 
     /*================== Font and typography =============*/
     --body-font: 'Poppins', sans-serif;
