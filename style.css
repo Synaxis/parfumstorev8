@@ -96,12 +96,12 @@ a.nav__logo {
       font-family: var(--body-font);
       font-size: var(--normal-font-size);
       background: var(--body-color);
-      color: var(--text-color);
+      color: black;
   }
   
   h1, h2, h3, h4 {
-      color: var(--title-color);
-      font-weight: var(--font-semi-bold);
+    color: black;
+    font-weight: var(--font-semi-bold);
   }
   
   div.trickcontent {
@@ -319,7 +319,7 @@ a.nav__logo {
   
   /*================ HOME ================*/
   .home__content {
-      /* row-gap: 1rem; */
+      row-gap: 1rem;
   }
   
   .home__group {
@@ -910,7 +910,7 @@ a.nav__logo {
       .home__content {
           padding: 8rem 0 2rem;
           grid-template-columns: repeat(2, 1fr);
-          /* gap: 2rem; */
+          gap: 2rem;
       margin-bottom: 10vh;}
   
       .home__img {
