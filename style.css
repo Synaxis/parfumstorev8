@@ -507,9 +507,9 @@ button {
 
 .trick__content {
     position: relative;
-    background: var(--container-color);
+    background: transparent;
     border-radius: 0.5rem;
-    padding: 1.0rem 0 0.5rem 0;
+    /* color:  black; */padding: 1.0rem 0 0.5rem 0;
     text-align: center;
     overflow: hidden;
     padding-bottom: 9%;
@@ -534,7 +534,7 @@ button {
 
 .trick__title,
 .trick__price {
-    color: var(--title-color);
+    color: black;
     font-weight: var(--font-medium);
     font-size: 0.65em;
 }
