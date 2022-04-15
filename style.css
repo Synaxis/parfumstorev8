@@ -18,9 +18,6 @@ a.nav__logo {
   div.trick__content {
     padding: 4px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
-  /*========================= GOOGLE GONTS =========================== */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;900&display=swap');
-  
   /*=================== VARIABLES CSS =======================*/
   :root {
       --header-height: 3.5rem;
@@ -342,7 +339,7 @@ a.nav__logo {
   .home__indicator {
       width: 8px;
       height: 8px;
-      /* background-color: blue; */
+      background-color: var(--title-color);
       border-radius: 50%;
       position: absolute;
       top: 7rem;
@@ -965,7 +962,7 @@ a.nav__logo {
       }
   
       .newsletter__container {
-          grid-template-columns: .5fr;
+          grid-template-columns: 0.5fr;
       }
   
       .footer__container {
@@ -1021,7 +1018,7 @@ a.nav__logo {
       }
   
       .home__details-img {
-          /* bottom: 0; */
+          bottom: 0;
           right: 58%;
       }
   
