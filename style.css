@@ -100,8 +100,8 @@ a.nav__logo {
   }
   
   h1, h2, h3, h4 {
-    color: black;
-    font-weight: var(--font-semi-bold);
+      color: black;
+      font-weight: var(--font-semi-bold);
   }
   
   div.trickcontent {
