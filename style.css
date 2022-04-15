@@ -13,7 +13,6 @@ a.nav__logo {
   }
   
   a.nav__link {
-  
     font-weight: 400;
   }
   
@@ -35,7 +34,7 @@ a.nav__logo {
     --container-color: linear-gradient(136deg, hsl(265deg 39% 49% / 85%) 0%, hsl(18deg 23% 70%) 100%);
   
       /*================== Font and typography =============*/
-      --body-font: 'Poppins', sans-serif;
+      --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       --biggest-font-size: 2rem;
       --h1-font-size: 1.5rem;
       --h2-font-size: 1.25rem;
