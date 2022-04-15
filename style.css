@@ -209,7 +209,7 @@ button {
 /*================= HEADER ===================*/
 .header{
     width: 100%;
-    background: #a87db5;
+    background: var(--body-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -319,7 +319,7 @@ button {
 
 /*================ HOME ================*/
 .home__content {
-    row-gap: 1rem;
+    row-gap: 0.5rem;
 }
 
 .home__group {
@@ -903,12 +903,12 @@ button {
 
     .home__content {
         padding: 8rem 0 2rem;
-        grid-template-columns: repeat(3, 0.5fr);
-        gap: 2rem;
-    margin-bottom: 10vh;}
+        grid-template-columns: repeat(2, 0.5fr);
+        /* gap: 2rem; */
+    margin-bottom: 21vh;}
 
     .home__img {
-        height: 300px;
+        height: 250px;
     }
 
     .swiper-pagination {
