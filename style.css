@@ -209,7 +209,7 @@ button {
 /*================= HEADER ===================*/
 .header{
     width: 100%;
-    background: var(--body-color);
+    background: #a87db5;
     position: fixed;
     top: 0;
     left: 0;
@@ -903,7 +903,7 @@ button {
 
     .home__content {
         padding: 8rem 0 2rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 0.5fr);
         gap: 2rem;
     margin-bottom: 10vh;}
 
