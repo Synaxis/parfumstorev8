@@ -17,7 +17,7 @@ a.nav__link {
 
 div.trick__content {
   padding: 4px;
-}
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
 /*========================= GOOGLE GONTS =========================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;900&display=swap');
 
@@ -503,7 +503,7 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
     padding-top: 0;
-margin-top: -50vh;}
+/* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */margin-top: -50vh;}
 
 .trick__content {
     position: relative;
