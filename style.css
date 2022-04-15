@@ -319,7 +319,7 @@ a.nav__logo {
   
   /*================ HOME ================*/
   .home__content {
-      row-gap: 1rem;
+      /* row-gap: 1rem; */
   }
   
   .home__group {
@@ -910,7 +910,7 @@ a.nav__logo {
       .home__content {
           padding: 8rem 0 2rem;
           grid-template-columns: repeat(2, 1fr);
-          gap: 2rem;
+          /* gap: 2rem; */
       margin-bottom: 10vh;}
   
       .home__img {
