@@ -209,7 +209,7 @@ a.nav__logo {
       background: var(--body-color);
       position: fixed;
       top: 0;
-      left: 0;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;left: 0;
       z-index: var(--z-fixed);
   }
   /*================= NAV ======================*/
@@ -317,7 +317,7 @@ a.nav__logo {
   /*================ HOME ================*/
   .home__content {
       row-gap: 1rem;
-  }
+  background-color:;}
   
   .home__group {
       display: grid;
