@@ -538,7 +538,7 @@ a.nav__logo {
   .trick__title,
   .trick__price {
       color: black;
-      font-weight: var(--font-medium);
+      font-weight: 500;
       font-size: 0.65em;
   }
   
