@@ -512,10 +512,7 @@ a.nav__logo {
 
 }
 
-.home {
-    background-color: blue; 
-    background-repeat: no-repeat; 
-}
+
 
 .perfume__container {
     grid-template-columns: repeat(3, 1fr);
@@ -1001,6 +998,8 @@ a.nav__logo {
       .container {
           margin-left: auto;
           margin-right: auto;
+      background-image: url("/img/bg.png"); 
+    background-repeat: no-repeat;}
   
       .section__title {
           font-size: var(--h1-font-size);
