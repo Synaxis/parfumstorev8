@@ -317,8 +317,7 @@ a.nav__logo {
   /*================ HOME ================*/
   .home__content {
       row-gap: 1rem;
-      background-image: url("/img/bg.png"); 
-      background-repeat: no-repeat; 
+    
   }
   
   .home__group {
@@ -510,7 +509,8 @@ a.nav__logo {
       gap: 1.2rem;
       padding-top: 0;
     margin-top: -50vh;
-
+    background-image: url("/img/bg.png"); 
+    background-repeat: no-repeat; 
 }
 
 .perfume__container {
@@ -997,7 +997,8 @@ a.nav__logo {
       .container {
           margin-left: auto;
           margin-right: auto;
-      }
+      background-image: url("/img/bg.png"); 
+    background-repeat: no-repeat;}
   
       .section__title {
           font-size: var(--h1-font-size);
