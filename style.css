@@ -209,7 +209,7 @@ a.nav__logo {
       /* background: #b99ea5; */
       position: fixed;
       margin-bottom: 3vh;
-      margin-bottom:;top: 0;
+      top: 0;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;left: 0;
       z-index: var(--z-fixed);
   }
