@@ -332,6 +332,7 @@ a.nav__logo {
 
   .home__img__small {
     height: 150px;
+    margin-bottom: 3vh;
     justify-self: center;
 }
 
