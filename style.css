@@ -513,7 +513,7 @@ a.nav__logo {
 }
 
 .home {
-    background-image: url("/img/bg.png"); 
+    background-color: blue; 
     background-repeat: no-repeat; 
 }
 
@@ -1075,7 +1075,7 @@ a.nav__logo {
       }
   
       .trick__img {
-          width: 110px;
+          width: 12vw;
       }   
   
       .trick__title {
