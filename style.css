@@ -206,7 +206,7 @@ a.nav__logo {
   /*================= HEADER ===================*/
   .header{
       width: 100%;
-      /* background: #b99ea5; */
+      background: #b99ea5;
       position: fixed;
       margin-bottom: 3vh;
       top: 0;
@@ -219,6 +219,9 @@ a.nav__logo {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 968px;
+      margin-left: var(--mb-1-5);
+      margin-right: var(--mb-1-5);
   }
   
   .nav__logo {
