@@ -317,6 +317,8 @@ a.nav__logo {
   /*================ HOME ================*/
   .home__content {
       row-gap: 1rem;
+      background-image: url("img/bg.png") no-repeat;
+
   }
   
   .home__group {
