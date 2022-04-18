@@ -903,7 +903,7 @@ a.nav__logo {
       }
   
       .nav {
-          height: calc(var(--header-height) + 1.5rem);
+          height: calc(var(--header-height) + 1.4rem);
       }
   
       .nav__img,
@@ -1002,7 +1002,7 @@ a.nav__logo {
       .container {
           margin-left: auto;
           margin-right: auto;
-      background-image: url("/img/bg.png"); 
+      background-image: url("/img/capa.png"); 
     background-repeat: no-repeat;}
   
 
