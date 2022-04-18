@@ -16,7 +16,7 @@ a.nav__logo {
   color: white;}
   
   div.trick__content {
-    padding: 4px;
+    padding: 1vw;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;background-color: #f99dd038;}
   /*=================== VARIABLES CSS =======================*/
   :root {
@@ -520,7 +520,7 @@ a.nav__logo {
 
 .perfume__container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.2rem;
     padding-top: 0;
   margin-top: -50vh;
 
@@ -1000,11 +1000,10 @@ a.nav__logo {
   /* For Large devies */
   @media screen and (min-width: 992px) {
       .container {
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("/img/bg.png"); 
-    background-repeat: no-repeat;
-}
+          margin-left: auto;
+          margin-right: auto;
+      background-image: url("/img/bg.png"); 
+    background-repeat: no-repeat;}
   
       .section__title {
           font-size: var(--h1-font-size);
@@ -1012,6 +1011,8 @@ a.nav__logo {
       }
   
       .home__content {
+          /* padding-top: 9rem; */
+          /* gap: 3rem; */
       margin-top: 4vh;}
   
       .home__group {
