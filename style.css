@@ -508,7 +508,7 @@ a.nav__logo {
   
   /*================= TRICK OR TREAT =============*/
   
-  .trick__container {
+  .perfume__container {
       grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
       padding-top: 0;
@@ -869,7 +869,7 @@ a.nav__logo {
       }
   
       .category__container,
-      .trick__container {
+      .perfume__container {
           grid-template-columns: .8fr;
           justify-content: center;
       }
@@ -955,7 +955,7 @@ a.nav__logo {
           width: 250px;
       }
   
-      .trick__container {
+      .perfume__container {
           margin-bottom: 30vh;grid-template-columns: repeat(4, 200px);
           justify-content: center;
           gap: 1.3rem;
@@ -1005,6 +1005,12 @@ a.nav__logo {
       background-image: url("/img/bg.png"); 
     background-repeat: no-repeat;}
   
+
+    .perfume__container {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
       .section__title {
           font-size: var(--h1-font-size);
           margin-bottom: 3rem;
@@ -1067,7 +1073,7 @@ a.nav__logo {
           padding-right: 2rem;
       }
   
-      .trick__container {
+      .perfume__container {
           gap: 3.5rem;
       }
   
