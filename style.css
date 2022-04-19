@@ -2,18 +2,24 @@ a.nav__logo {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     font-size: 1.8em;
-    /* margin-left: -2vw; */
+    margin-left: -2vw;
   }
   
   nav.nav.container {
     height: 6.5vh;
+  }
+  .tituloAcessorios {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      font-weight: 600;
+      font-size: 1.2em;
   }
   
   a.nav__link {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
     font-weight: 600;
-  font-size: 0.965em;color: white;}
+  color: white;}
   
   div.trick__content {
     padding: 1vw;
@@ -206,7 +212,7 @@ a.nav__logo {
   /*================= HEADER ===================*/
   .header{
       width: 100%;
-      background: #ca9cd8;
+      background: #b99ea5;
       position: fixed;
       margin-bottom: 3vh;
       top: 0;
@@ -903,7 +909,7 @@ a.nav__logo {
       }
   
       .nav {
-          height: calc(var(--header-height) + 1.4rem);
+          height: calc(var(--header-height) + 1.5rem);
       }
   
       .nav__img,
@@ -1002,7 +1008,7 @@ a.nav__logo {
       .container {
           margin-left: auto;
           margin-right: auto;
-      background-image: url("/img/capa.png"); 
+      background-image: url("/img/bg.png"); 
     background-repeat: no-repeat;}
   
 
