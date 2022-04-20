@@ -1164,7 +1164,7 @@ a.nav__logo {
 
   @media screen and (min-width: 440px) {
     .home__img {
-        margin-top: 3vh;height: 150px;
+        height: 200px;
     width: 450px;}
 
 .home__group {font-size: 1em;}
@@ -1177,6 +1177,11 @@ a.nav__logo {
     }
     .footer__img-one {
         width: 120px;
+    }
+    .home__subtitle {
+        font-size: var(--h3-font-size);
+        text-transform: uppercase;
+        margin-bottom: var(--mb-1);
     }
 
     div.home__content.grid {
