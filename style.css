@@ -1164,8 +1164,8 @@ a.nav__logo {
 
   @media screen and (min-width: 440px) {
     .home__img {
-        height: 240px;
-    }
+        height: 200px;
+    width: 450px;}
 
 .home__group {font-size: 1em;}
 
@@ -1181,7 +1181,7 @@ a.nav__logo {
 
     div.home__content.grid {
         
-    }
+    display: flex;}
 
     .home__buttons {
 
