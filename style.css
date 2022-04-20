@@ -186,7 +186,7 @@ a.nav__logo {
   
   /*================= REUSABLE CSS CLASSES ====================*/
   .section {
-      padding: 4.5rem 0 2rem;
+      padding: 5.5rem 0 3rem;
   }
   
   .section__title {
@@ -328,7 +328,7 @@ a.nav__logo {
   .home__content {
       row-gap: 1rem;
     
-  }
+  margin-bottom:;}
   
   .home__group {
       display: grid;
