@@ -875,7 +875,9 @@ a.nav__logo {
       .home__img {
           height: 120px;
       }
-
+      .home__data {
+          color: blue;
+      }
       a.nav__logo {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 600;
