@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-    <html>
+
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="google" content="notranslate" />
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
         <!--=========== FAVICON ============-->
-        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
         <meta name="google" value="notranslate">
         <!--=========== BOXICONS ============-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -13,7 +14,7 @@
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
         <!--=========== CSS ============-->
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets//css/styles.css">
 
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -23,14 +24,14 @@
     <body>
         <!--========================== HEADER =========================-->
         <header class="header" id="header">
-            <nav style="font-size: 1.5em !important;" class="nav">
+            <nav style="font-size: 1.5em !important;" class="nav container">
             <a href="#" class="nav__logo">MizaShow</a>
     
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">         
     
                 <li class="nav__item">
-                    <a href="#sobre" class="nav__link">Sobre</a>
+                    <a href="#Sobre" class="nav__link">Sobre</a>
                 </li>
     
                 <li class="nav__item">
@@ -65,26 +66,162 @@
             <section class="home container" id="home">
                 <div class="swiper home-swiper">
                     <div class="swiper-wrapper">
+
                         <section class="swiper-slide">
-                            <!-- <div class="home__content grid">
+                            <div class="home__content grid">
                                 <div class="home__group">
-                                    <img src="img/flame.png" alt="" class="home__img">                                                                       
+                                    <img src="img/flame.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+
+                                    <div class="home__details-img">                                   
+                                        
+                                    </div>
                                 </div>
 
                                 <div class="home__data">
                                     <h3 class="home__subtitle"> </h3>
-                                    <h2 class="home__title">Novos Perfumes</h2>
+                                    <h2 class="home__title">Novos Perfumes no Catálogo</h2>
                                     <p class="home__description">
-                                        Ofertas de Páscoa!
-                                    </p>                                   
+                                        Ofertas de Páscoa
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#trick" class="button">Comprar</a>
+                                        <a href="#" class="button--link button--flex">
+                                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                                        </a>
+                                    </div>
                                 </div>
+                            </div>
+                        </section>
+
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="img/antonioBandera.png" style="width:250px; height: auto;" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">
+                                            Antonio Bandera
+                                        </h4>
+                                        <span class="home__details-subtitle">
+                                            Sem palavras para descrever
+                                        </span>
+                                    </div>
                                 </div>
-                            </div> -->
-                            </section>
+                                <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="img/zaad.png" style="width: 250px; height: auto;" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">
+                                            Zaad O'Boticario
+                                        </h4>
+                                        <span class="home__details-subtitle">
+                                            Novidade
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">Antonio Bandera Thе Goldеn Sеcrеt</h3>                                
+                                    <div class="home__buttons">
+                                        <a href="#trick" class="button">Comprar</a>
+                                        <a href="#" class="button--link button--flex">
+                                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="img/tradicional.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">
+                                            Malbec Tradicional
+                                        </h4>                                  
+                                    </div>
+                                </div>
+
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">Malbec Tradicional</h3>
+                                    <p class="home__description">
+                                       
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Comprar</a>
+                                        <a href="#" class="button--link button--flex">
+                                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
-            </section>            
-          
-            <!--==================== Perfumes ====================-->
+            </section>
+            
+            <!--================= CATEGORY ===================-->
+            <!-- <section class="section category">
+                <h2 class="section__title">Favorite Scare <br> Category</h2>
+
+                <div class="category__container container grid">
+                    <div class="category__data">
+                        <img src="assets/img/category1-img.png" alt="" class="category__img">
+                        <h3 class="category__title">Ghosts</h3>
+                        <p class="category__description">
+                            Choose the ghosts, the scariest there are.
+                        </p>
+                    </div>
+
+                    <div class="category__data">
+                        <img src="assets/img/category2-img.png" alt="" class="category__img">
+                        <h3 class="category__title">Pumpkins</h3>
+                        <p class="category__description">
+                            You look at the scariest pumpkins there is.
+                        </p>
+                    </div>
+
+                    <div class="category__data">
+                        <img src="assets/img/category3-img.png" alt="" class="category__img">
+                        <h3 class="category__title">Witch Hat</h3>
+                        <p class="category__description">
+                            Pick the most stylish witch hats out there.
+                        </p>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--================= ABOUT ======================-->
+            <!-- <section class="section about" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            About Halloween <br> Night
+                        </h2>
+                        <p class="about__description">
+                            Night of all the saints, or all the dead, is celebrated on October
+                            31 and it is a very fun international celebration, this celebration
+                            comes from ancient origins, and is already celebrated by everyone.
+                        </p>
+                        <a href="#" class="button">Know more</a>
+                    </div>
+
+                    <img src="assets/img/about-img.png" alt="" class="about__img">
+                </div>
+            </section> -->
+
+          <!--==================== Perfumes ====================-->
         <section class="section trick" id="trick">
 
             <div class="perfume__container grid">
