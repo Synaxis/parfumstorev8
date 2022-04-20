@@ -602,8 +602,7 @@ a.nav__logo {
       background: var(--container-color);
       border-radius: 1rem;
       padding: 2.5rem 0 1.5rem;
-       row-gap: .75rem;
-    
+      row-gap: .75rem;
   }
   
   .discount__data {
@@ -645,7 +644,7 @@ a.nav__logo {
   .new__tag {
       position: absolute;
       top: 8%;
-      left: 8%;      
+      left: 8%;
       background-color: var(--first-color);
       color: var(--title-color);
       font-size: var(--small-font-size);
@@ -874,8 +873,15 @@ a.nav__logo {
       }
   
       .home__img {
-          height: 200px;
+          height: 120px;
       }
+
+      a.nav__logo {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-size: 1.8em;
+        margin-left: -5vw;
+    }
   
       .home__buttons {
           flex-direction: column;
@@ -885,8 +891,9 @@ a.nav__logo {
   
       .category__container,
       .perfume__container {
-          grid-template-columns: .8fr;
-          justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        font-size: 0.75em;
       }
   }
   
