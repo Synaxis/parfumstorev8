@@ -339,10 +339,10 @@ a.nav__logo {
  }
   
   .home__group {
-      display: grid;
+      display: flex;
       position: relative;
-      padding-top: 2rem;
-  }
+      
+  justify-content: center;}
   
   .home__img {
       height: 250px;
@@ -1164,13 +1164,17 @@ a.nav__logo {
 
   @media screen and (min-width: 440px) {
     .home__img {
-        height: 420px;
+        height: 240px;
     }
+
+.home__group {font-size: 1em;}
 
     .swiper-pagination {
         margin-top: var(--mb-2-5);
     }
-
+    h2.home__title {
+        font-size: 1em;
+    }
     .footer__img-one {
         width: 120px;
     }
