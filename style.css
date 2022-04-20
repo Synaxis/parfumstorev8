@@ -1183,7 +1183,9 @@ a.nav__logo {
         text-transform: uppercase;
         margin-bottom: var(--mb-1);
     }
-
+    .home__details-title, .home__details-subtitle {
+        
+    }
     div.home__content.grid {
         
     display: flex;}
