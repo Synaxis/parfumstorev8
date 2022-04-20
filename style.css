@@ -876,8 +876,8 @@ a.nav__logo {
           height: 120px;
       }
       .home__data {
-          color: blue;
-      }
+          /* color: blue; */
+      display: flex;/* width: 10vw; */font-size: 1em;height: 1vh;flex-direction: column-reverse;align-items: center;}
       a.nav__logo {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 600;
