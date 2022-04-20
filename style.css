@@ -848,7 +848,7 @@ a.nav__logo {
   /*================== SCROLL BAR =====================*/
   ::-webkit-scrollbar {
       width: 0.6rem;
-      background: #413e3e;
+      background: #d2a9a9;
   }
   
   ::-webkit-scrollbar-thumb {
@@ -1008,8 +1008,9 @@ a.nav__logo {
       .container {
           margin-left: auto;
           margin-right: auto;
-      background-image: url("/img/bg.png"); 
-    background-repeat: no-repeat;}
+      /* background-image: url("/img/bg.png"); 
+    background-repeat: no-repeat;*/
+} 
   
 
     .perfume__container {
