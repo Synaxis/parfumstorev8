@@ -5,6 +5,14 @@ a.nav__logo {
     margin-left: -2vw;
   }
   
+  div.home__content.grid {
+    padding: 1px;
+   }
+   
+   h2.home__title {
+     font-size: 3em;
+     font-weight: 600;
+   }
   nav.nav.container {
     height: 6.5vh;
   }
