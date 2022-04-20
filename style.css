@@ -1172,7 +1172,7 @@ a.nav__logo {
     .swiper-pagination {
         margin-top: var(--mb-2-5);
     }
-    h2.home__title {
+    .home__title {
         font-size: 1em;
     }
     .footer__img-one {
@@ -1180,7 +1180,7 @@ a.nav__logo {
     }
 
     .home__buttons {
-        
+
     }
 
     .footer__img-two {
