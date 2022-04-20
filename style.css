@@ -1162,7 +1162,9 @@ a.nav__logo {
       }
   }
 
-  @media screen and (min-width: 440px) {
+  
+
+  @media screen and (max-width: 440px) {
     .home__img {
         height: 200px;
     width: 450px;}
@@ -1185,7 +1187,8 @@ a.nav__logo {
     }
     .home__details-title, .home__details-subtitle {
         
-    margin-bottom:;margin-top: -4vw;}
+    margin-top: -4vw;
+}
     div.home__content.grid {
         
     display: flex;}
