@@ -1400,8 +1400,9 @@ a.nav__logo {
     
 }@media screen and (min-width: 140px) {
     .home__img {
-        height: 90px;
-    width: 100px;}
+        height: 25vw;
+        width: 30vh;
+    }
 
 .home__group {font-size: 1em;}
 
