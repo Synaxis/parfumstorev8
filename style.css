@@ -344,10 +344,7 @@ a.nav__logo {
       
   justify-content: center;}
   
-  .home__img {
-      height: 250px;
-      justify-self: center;
-  }
+  
 
   .home__img__small {
     height: 150px;
@@ -953,7 +950,7 @@ a.nav__logo {
       margin-bottom: 10vh;}
   
       .home__img {
-          height: 400px;
+          height: 300px;
       }
   
       .swiper-pagination {
@@ -1052,7 +1049,7 @@ a.nav__logo {
   
       .home__img {
           height: 400px;
-          /* transform: translateY(-3rem); */
+          transform: translateY(-3rem);
       }
   
       .home__indicator {
@@ -1160,7 +1157,14 @@ a.nav__logo {
           top: 30%;
           left: -3%;
       }
-  }  
+  }
+
+  
+
+  @media screen and (max-width: 440px) {
+    .home__img {
+        height: 200px;
+    width: 450px;}
 
 .home__group {font-size: 1em;}
 
@@ -1180,7 +1184,7 @@ a.nav__logo {
     }
     .home__details-title, .home__details-subtitle {
         
-    margin-top: -2vw;
+    margin-top: -4vw;
 }
     div.home__content.grid {
         
@@ -1195,9 +1199,4 @@ a.nav__logo {
         top: 30%;
         left: -3%;
     }
-
-@media screen and (min-width: 600px)
-.home__img {
-    height: 350px;
-}
 }
