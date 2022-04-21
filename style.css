@@ -1325,9 +1325,9 @@ a.nav__logo {
     .home__img {
         height: 25vw;
         width: 30vh;
-        transform: translate(-50%, -50%);
+        transform: translate(-20%, -5%);
 
-    }
+    position: fixed;}
 
 .home__group {font-size: 1em;}
 
