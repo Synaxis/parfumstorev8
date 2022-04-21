@@ -1230,14 +1230,14 @@ a.nav__logo {
 @media screen and (max-width: 330px) {
     .home__img {
         height: 200px;
-    width: 450px;
+    width: 400px;
 }
 }
 
 @media screen and (max-width: 230px) {
     .home__img {
-        height: 200px;
-    width: 450px;
+        height: 150px;
+    width: 350px;
 }
 }
 
