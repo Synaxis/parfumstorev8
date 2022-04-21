@@ -24,7 +24,6 @@ a.nav__logo {
   }
   .js-Carousel > ul li {
     display: inline-block;
-    float: left;
     width: 500px;
     transition: margin-left 0.3s ease;
   }
@@ -355,7 +354,7 @@ a.nav__logo {
   
   /*================= REUSABLE CSS CLASSES ====================*/
   .section {
-      padding: 5.5rem 0 3rem;
+      padding: 24rem 0 3rem;
   }
   
   .section__title {
