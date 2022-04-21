@@ -24,13 +24,14 @@ a.nav__logo {
   }
   .js-Carousel > ul li {
     display: inline-block;
+    float: left;
     width: 500px;
     transition: margin-left 0.3s ease;
   }
   .js-Carousel > ul li img {
    text-align:center;
-   width: 350px;
-   height: 350px;
+   width: 300px;
+   height: 300px;
   }
   .js-Carousel .js-Carousel-arrowPrev,
   .js-Carousel .js-Carousel-arrowNext {
@@ -889,7 +890,7 @@ a.nav__logo {
   .footer {
       position: relative;
       overflow: hidden;
-  }
+  bottom: 5vh;}
   
   .footer__img-one,
   .footer__img-two {
@@ -1033,7 +1034,7 @@ a.nav__logo {
 .js-Carousel {
     background: white;
     height: 455px;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   margin-top: 30vh;
     overflow: hidden;
     position: relative;
