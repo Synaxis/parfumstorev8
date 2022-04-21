@@ -1205,7 +1205,7 @@ a.nav__logo {
 
 @media screen and (max-width: 540px) {
     .home__img {
-        height: 200px;
+        height: 300px;
     width: 450px;}
 
 .home__group {font-size: 1em;}
@@ -1244,7 +1244,7 @@ a.nav__logo {
     
 }@media screen and (max-width: 640px) {
     .home__img {
-        height: 200px;
+        height: 400px;
     width: 450px;}
 
 .home__group {font-size: 1em;}
@@ -1283,7 +1283,7 @@ a.nav__logo {
     
 }@media screen and (max-width: 740px) {
     .home__img {
-        height: 200px;
+        height: 500px;
     width: 450px;}
 
 .home__group {font-size: 1em;}
@@ -1322,8 +1322,8 @@ a.nav__logo {
     
 }@media screen and (max-width: 340px) {
     .home__img {
-        height: 200px;
-    width: 450px;}
+        height: 100px;
+    width: 250px;}
 
 .home__group {font-size: 1em;}
 
@@ -1361,8 +1361,8 @@ a.nav__logo {
     
 }@media screen and (max-width: 240px) {
     .home__img {
-        height: 200px;
-    width: 450px;}
+        height: 100px;
+    width: 200px;}
 
 .home__group {font-size: 1em;}
 
@@ -1400,8 +1400,8 @@ a.nav__logo {
     
 }@media screen and (max-width: 140px) {
     .home__img {
-        height: 200px;
-    width: 450px;}
+        height: 90px;
+    width: 100px;}
 
 .home__group {font-size: 1em;}
 
@@ -1439,47 +1439,8 @@ a.nav__logo {
     
 }@media screen and (max-width: 2000px) {
     .home__img {
-        height: 200px;
-    width: 450px;}
-
-.home__group {font-size: 1em;}
-
-    .swiper-pagination {
-        margin-top: var(--mb-2-5);
-    }
-    .home__title {
-        font-size: 1em;
-    }
-    .footer__img-one {
-        width: 120px;
-    }
-    .home__subtitle {
-        font-size: var(--h3-font-size);
-        text-transform: uppercase;
-        margin-bottom: var(--mb-1);
-    }
-    .home__details-title, .home__details-subtitle {
-        
-    margin-top: -4vw;
-}
-    div.home__content.grid {
-        
-    display: flex;}
-
-    .home__buttons {
-
-    }
-
-    .footer__img-two {
-        width: 180px;
-        top: 30%;
-        left: -3%;
-    }
-    
-}@media screen and (max-width: 3000px) {
-    .home__img {
-        height: 200px;
-    width: 450px;}
+        height: 600px;
+    width: 550px;}
 
 .home__group {font-size: 1em;}
 
