@@ -60,12 +60,12 @@ a.nav__logo {
   }
   .js-Carousel .js-Carousel-dots {
     display: inline-block;
-    height: 1.25em;
-    margin: 0;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    width: auto;
+    height: em;
+    /* margin: 0; */
+    position: inherit;
+    bottom: -2em;
+    right: -12em;
+    line-height:;width: auto;
   }
   .js-Carousel .js-Carousel-dots li {
     background: #aaaaaa;
