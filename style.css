@@ -950,7 +950,8 @@ a.nav__logo {
       margin-bottom: 10vh;}
   
       .home__img {
-          height: 300px;
+        height: 350px;
+        margin-left: 30vw;
       }
   
       .swiper-pagination {
@@ -1199,4 +1200,72 @@ a.nav__logo {
         top: 30%;
         left: -3%;
     }
+    
 }
+@media screen and (max-width: 830px) {
+    .home__img {
+    width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .home__img {
+    height: 200px;
+    width: 450px;
+}
+
+@media screen and (max-width: 530px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 330px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 230px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 130px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 2000px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 1366px) {
+    .home__img {
+        height: 200px;
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 1366px) {
+    .home__img {
+        height: 300px;
+    width: 350px;
+}
+}
+}}
