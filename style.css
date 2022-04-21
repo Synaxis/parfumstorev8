@@ -1241,7 +1241,7 @@ a.nav__logo {
   
       .perfume__container {
           margin-bottom: 30vh;grid-template-columns: repeat(4, 200px);
-          justify-content: center;
+          margin-top: 1vh;justify-content: center;
           gap: 1.3rem;
       }
   
