@@ -1,1630 +1,768 @@
-a.nav__logo {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    font-size: 1.8em;
-    margin-left: -2vw;
-  }
 
-  
-.js-Carousel {
-    background: white;
-    height: 455px;
-    margin-bottom: 3vh;
-  margin-top: 1vh;
-    overflow: hidden;
-    position: relative;
-    width: 800px;
-  }
-  .js-Carousel > ul {
-    height: 200px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 9999px;
-  }
-  .js-Carousel > ul li {
-    display: inline-block;
-    float: left;
-    width: 500px;
-    transition: margin-left 0.3s ease;
-  }
-  .js-Carousel > ul li img {
-   text-align:center;
-   width: 300px;
-   height: 300px;
-  }
-  .js-Carousel .js-Carousel-arrowPrev,
-  .js-Carousel .js-Carousel-arrowNext {
-    background: transparent;
-    border: 0;
-    color: #e0e0e0;
-    cursor: pointer;
-    font: 400 10em sans-serif;
-    height: 200px;
-    outline: 0;
-    position: absolute;
-    top: 0;
-    text-shadow: 0 0 10px #444444;
-    width: 90px;
-    transition: all 0.2s ease;
-  }
-  .js-Carousel .js-Carousel-arrowPrev:hover,
-  .js-Carousel .js-Carousel-arrowNext:hover {
-    color: #aaaaaa;
-  }
-  .js-Carousel .js-Carousel-arrowPrev {
-    left: 0;
-  }
-  .js-Carousel .js-Carousel-arrowNext {
-    right: 0;
-  }
-  .js-Carousel .js-Carousel-dots {
-    display: inline-block;
-    height: 1.25em;
-    margin: 0;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    width: auto;
-  }
-  .js-Carousel .js-Carousel-dots li {
-    background: #aaaaaa;
-    border-radius: .75em;
-    cursor: pointer;
-    display: inline-block;
-    height: .75em;
-    margin: 0 .75em;
-    width: .75em;
-    transition: all 0.2s ease;
-  }
-  .js-Carousel .js-Carousel-dots li.is-active {
-    background: #ffffff;
-    box-shadow: 0 0 3px 3px #ddd;
-  }
-  .js-Carousel .js-Carousel-dots li:hover {
-    background: #f5f5f5;
-  }
-  .js-Carousel .js-Carousel-btnStop,
-  .js-Carousel .js-Carousel-btnPlay {
-    background: #aaaaaa;
-    border: 0;
-    cursor: pointer;
-    height: 2.25em;
-    position: absolute;
-    bottom: 1em;
-    left: 2em;
-    text-align: center;
-    width: 5em;
-    transition: all 0.2s ease;
-  }
-  .js-Carousel .js-Carousel-btnStop:hover,
-  .js-Carousel .js-Carousel-btnPlay:hover {
-    background: #f5f5f5;
-  }
-  .js-Carousel .js-Carousel-btnStop {
-    left: 100px;
-  }
-  
-  
-  
-  @-webkit-keyframes slideLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-  }
-  
-  @keyframes slideLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-  }
-  
-  @-webkit-keyframes slideRight {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-  }
-  
-  @keyframes slideRight {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-  }
-  
-  *::before,
-  *::after {
-    padding: 0;
-    margin: 0;
-  
-  }
-  
-  div.home__content.grid {
-    padding: 1px;
-   }
-   
-   h2.home__title {
-     font-size: 3em;
-     font-weight: 600;
-   }
-  nav.nav.container {
-    height: 6.5vh;
-  }
-  .tituloAcessorios {
-      margin-top: 2vh;
-      margin-bottom: 2vh;
-      font-weight: 600;
-      font-size: 1.2em;
-  }
-  
-  a.nav__link {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-    font-weight: 600;
-  color: white;}
-  
-  div.trick__content {
-    padding: 1vw;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;background-color: #f99dd038;}
-  /*=================== VARIABLES CSS =======================*/
-  :root {
-      --header-height: 3.5rem;
-  
-      /*=============== Colors =============*/
-      --hue: 14;
-      --first-color: hsl(var(--hue), 91%, 54%);
-      --first-color-alt: hsl(var(--hue), 91%, 50%);
-      --title-color: hsl(var(--hue), 4%, 100%);
-      --text-color: hsl(var(--hue), 4%, 85%);
-      --text-color-light:  hsl(var(--hue), 4%, 55%);
-  
-    --body-color: white;
-    --container-color: linear-gradient(136deg, hsl(265deg 39% 49% / 85%) 0%, hsl(18deg 23% 70%) 100%);
-  
-      /*================== Font and typography =============*/
-      --body-font: 'Poppins', sans-serif;
-      --biggest-font-size: 2rem;
-      --h1-font-size: 1.5rem;
-      --h2-font-size: 1.25rem;
-      --h3-font-size: 1rem;
-      --normal-font-size: .938rem;
-      --small-font-size: .813rem;
-      --smaller-font-size: .75rem;
-  
-      /*=========== Font weight ==================*/
-      --font-medium: 500;
-      --font-semi-bold: 600;
-      --font-black: 900;
-  
-      /*============= Margenes Bottom ===============*/
-      --mb-0-25: .25rem;
-      --mb-0-5: .5rem;
-      --mb-0-75: .75rem;
-      --mb-1: 1rem;
-      --mb-1-5: 1.5rem;
-      --mb-2: 2rem;
-      --mb-2-5: 2.5rem;
-  
-      /*================== z index =============*/
-      --z-tooltip: 10;
-      --z-fixed: 100;
-  }
-  
-  
-  
-  /* Resposive typography */
-  @media screen and (minx-width: 992px) {
-      :root {
-          --biggest-font-size: 4rem;
-          --h1-font-size: 2.25rem;
-          --h2-font-size: 1.5rem;
-          --h3-font-size: 1.25rem;
-          --normal-font-size: 1rem;
-          --small-font-size: .875rem;
-          --smaller-font-size: .813rem;
-      }
-  }
-  
-  /*================= BASE ===================*/
-  *{
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-  }
-  
-  html {
-      scroll-behavior: smooth;
-  }
-  
-  body {
-      margin: var(--header-height) 0 0 0;
-      font-family: var(--body-font);
-      font-size: var(--normal-font-size);
-      background: var(--body-color);
-      color: black;
-  }
-  
-  h1, h2, h3, h4 {
-    color: black;
-    font-weight: var(--font-semi-bold);
-  }
-  
-  div.trickcontent {
-      padding: 4%;
-      padding-bottom: 0%;
-      height: 90%;
-  }
-  
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-      padding: 0.5%;
-  }
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--=========== FAVICON ============-->
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <meta name="google" value="notranslate">
+        <!--=========== BOXICONS ============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=========== SWIPER CSS ============-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+        <!--=========== CSS ============-->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+        <title>🔒MizaShow Perfumes</title>
+    </head>
+    <body style="  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;">
+        <!--========================== HEADER =========================-->
+        <header class="header" id="header">
+            <nav style="font-size: 1.5em !important;" class="nav container">
+            <a href="#" class="nav__logo">MizaShow</a>
     
-  span.swiper-pagination-bullet {
-      padding: 0.5%;
-  }
-  
-  a.button {
-      font-size: 1.0em;
-      padding: 3%;
-      background-color: goldenrod;
-  }
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
     
-  nav.nav.container {
-      height: 8vh;
-  }
+                <li class="nav__item">
+                    <a href="#trick" class="nav__link">Perfumes</a>
+                </li>
     
-  h2.hometitle {
-      font-size: 2.8em;
-  }
+                <li class="nav__item">
+                    <a href="#electro" class="nav__link">Acessórios</a>
+                </li>
     
-  img.trickimg {
-      width: 80%;
-  }
-  
-  ul {
-      list-style: none;
-  }
-  
-  a {
-      text-decoration: none;
-  }
-  
-  main.main {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  a.button:hover {
-      font-size: 1.1em;
-  }
-  
-  a.navlink {
-  font-size: 1.80vw;
-  
-  }
-  
-  a.nav__link:hover {
-      font-size: 1.1em;
-      background-color: silver;
-      border-radius: 10px;
-     
-  }
-  
-  img {
-      max-width: 100%;
-      height: auto;
-  }
-  
-  button,
-  input {
-      border: none;
-      outline: none;
-  }
-  
-  button {
-      cursor: pointer;
-      font-family: var(--body-font);
-      font-size: var(--normal-font-size);
-  }
-  
-  /*================= REUSABLE CSS CLASSES ====================*/
-  .section {
-      padding: 24rem 0 3rem;
-  }
-  
-  .section__title {
-      font-size: var(--h2-font-size);
-      margin-bottom: var(--mb-2);
-      text-align: center;
-  }
-  
-  /* ================ LAYOUT ===================*/
-  .container {
-      max-width: 968px;
-      margin-left: var(--mb-1-5);
-      margin-right: var(--mb-1-5);
-  }
-  
-  .grid {
-      display: grid;
-  }
-  
-  .main {
-      overflow: hidden; /*For animation*/
-  margin-top: 10vh;}
-  /*================= HEADER ===================*/
-  .header{
-      width: 100%;
-      background: #b99ea5;
-      position: fixed;
-      margin-bottom: 3vh;
-      top: 0;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;left: 0;
-      z-index: var(--z-fixed);
-  }
-  /*================= NAV ======================*/
-  .nav {
-      height: var(--header-height);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 968px;
-      margin-left: var(--mb-1-5);
-      margin-right: var(--mb-1-5);
-  }
-  
-  .nav__logo {
-      display: flex;
-      align-items: center;
-      column-gap: .5rem;
-      font-weight: var(--font-medium);
-  }
-  
-  .nav__logo-img {
-      width: 1.25rem;
-  }
-  
-  .nav__link,
-  .nav__logo,
-  .nav__toggle,
-  .nav__close {
-      color: var(--title-color);
-  }
-  
-  .nav__toggle {
-      font-size: 1.25rem;
-      cursor: pointer;
-  }
-  
-  @media screen and (max-width: 767px) {
-      .nav__menu{
-          position: fixed;
-          width: 100%;
-          background: var(--container-color);
-          top: -150%;
-          left: 0;
-          padding: 3.5rem 0;
-          transition: .4s;
-          z-index: var(--z-fixed);
-          border-radius: 0 0 1.5rem 1.5rem;
-      }
-  }
-  
-  .nav__img {
-      width: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  
-  .nav__close {
-      font-size: 1.8rem;
-      position: absolute;
-      top: .5rem;
-      right: .7rem;
-      cursor: pointer;
-  }
-  
-  .nav__list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 1.5rem;
-  }
-  
-  .nav__link {
-      text-transform: uppercase;
-      font-weight: var(--font-black);
-      transition: .4s;
-  }
-  
-  .nav__link:hover {
-      color: var(--text-color);
-  }
-  /* Show menu */
-  .show-menu {
-      top: 0;
-  }
-  
-  /* Change background header */
-  .scroll-header {
-      background: var(--container-color);
-  }
-  
-  /* Active Link */
-  .active-link {
-      position: relative;
-  }
-  
-  .active-link::before {
-      content: '';
-      position: absolute;
-      bottom: -.75rem;
-      left: 45%;
-      width: 5px;
-      height: 5px;
-      background-color: var(--title-color);
-      border-radius: 50%;
-  }
-  
-  /*================ HOME ================*/
-  .home__content {
-      row-gap: 1rem;
+                <li class="nav__item">
+                    <a href="https://linktr.ee/mizashow" class="nav__link">Redes Sociais</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://www.mercadolivre.com.br/perfil/ARMI5338416" class="nav__link">Ofertas</a>
+                </li>
+                </ul>
     
- }
-  
-  .home__group {
-      display: flex;
-      position: relative;
-      
-  justify-content: center;}
-  
-  
+                <div class="nav__close" id="nav-close">
+                <i class="bx bx-x"></i>
+                </div>
+    
+                <img src="assets/img/nav-img.png" alt="" class="nav__img"/>
+            </div>
+    
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+            </nav>
+        </header>
 
-  .home__img__small {
-    height: 150px;
-    margin-bottom: 3vh;
-    justify-self: center;
-}
+        <div></div>
+        <main class="main">
+            <div></div>
+            <!--================= HOME =======================-->
+            <section class="home container" id="home">
+                  <div class="js-Carousel" id="carousel">
+        <ul>
+          <li><img src="img/lili.jpg" alt=""></li>
+        <li><img src="img/britney.png" alt=""></li>
+        <li><img src="img/quasar.png" alt=""></li>
+        <li><img src="img/one.png" alt=""></li>
+        <li><img src="img/polo.png" alt=""></li>
+        <li><img src="img/classico.jpg" alt=""></li>
+        <li><img src="img/hugo.jpg" alt=""></li>
+          <li><img src="img/hergolden.jpg" alt=""></li>
+          <li><img src="img/udvblue.jpg" alt=""></li>
+          <li><img src="img/ferrarired.png" alt=""></li>
+          <li><img src="img/power.jpg" alt=""></li>
+          <li><img src="img/britney.png" alt=""></li>
+          <li><img src="img/udv.jpg" alt=""></li>
+          <li><img src="img/wild.jpg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <div></div>
+    <div></div>
+    <script src="carousel.js"></script>
+    <script>
+      var carousel = new Carousel({
+      	elem: 'carousel',
+      	dots: true,
+      	arrows: false,
+      	buttons: false,
+      	autoplay: true,
+      	infinite: true
+      });
+    </script>
+            
+           
+          <!--==================== Perfumes ====================-->
+        <section class="section trick" id="trick">
+            <div></div>
+            <div></div>
+            <div class="perfume__container grid">
+  <h2 style="text-align:center; cursor: pointer;" onclick="window.location='https://lista.mercadolivre.com.br/_CustId_176774316';">Ofertas Clique Aqui ⌚</h2>
 
-  
-  .home__indicator {
-      width: 8px;
-      height: 8px;
-      background-color: var(--title-color);
-      border-radius: 50%;
-      position: absolute;
-      top: 7rem;
-      right: 2rem;
-  }
-  
-  .home__indicator::after {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 48px;
-      background-color: var(--title-color);
-      top: -3rem;
-      right: 45%;
-  }
-  
-  .home__details-img {
-      position: absolute;
-      right: .5rem;
-  }
-  
-  .home__details-title,
-  .home__details-subtitle {
-      display: block;
-      font-size: var(--small-font-size);
-      text-align: right;
-  }
-  
-  .home__subtitle {
-      font-size: var(--h3-font-size);
-      text-transform: uppercase;
-      margin-bottom: var(--mb-1);
-  }
-  
-  .home__title {
-      font-size: var(--biggest-font-size);
-      font-weight: var(--font-black);
-      line-height: 109%;
-      margin-bottom: var(--mb-1);
-  }
-  
-  .home__description {
-      margin-bottom: var(--mb-1);
-  }
-  
-  .home__buttons {
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  
-  /* Swiper Class */
-  .swiper-pagination {
-      position: initial;
-      margin-top: var(--mb-1);
-  }
-  
-  .swiper-pagination-bullet {
-      width: 5px;
-      height: 5px;
-      background-color: var(--title-color);
-      opacity: 1;
-  }
-  
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-      margin: 0 .5rem;
-  } 
-  
-  .swiper-pagination-bullet-active {
-      width: 1.5rem;
-      height: 5px;
-      border-radius: .5rem;
-  }
-  
-  
-  
-  /*================= BUTTONS ==================*/
-  .button {
-      display: inline-block;
-      background-color: var(--first-color);
-      color: var(--title-color);
-      padding: 1rem 1.75rem;
-      border-radius: .5rem;
-      font-weight: var(--font-medium);
-      transition: .3s;
-  }
-  
-  .button:hover {
-      background-color: var(--first-color-alt);
-  }
-  
-  .button__icon {
-      font-size: 1.25rem;
-  }
-  
-  .button--ghost {
-      border: 2px solid;
-      background-color: transparent;
-      border-radius: 3rem;
-      padding: .75rem 1.5rem;
-  }
-  
-  .button--ghost:hover {
-      background: none;
-  }
-  
-  .button--link {
-      color: var(--title-color);
-  }
-  
-  .button--flex {
-      display: inline-flex;
-      align-items: center;
-      column-gap: .5rem;
-  }
-  
-  /*================= CATEGORY =================*/
-  .category__container {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem 2rem;
-  }
-  
-  .category__data {
-      text-align: center;
-  }
-  
-  .category__img {
-      width: 120px;
-      margin-bottom: var(--mb-0-75);
-      transition: .3s;
-  }
-  
-  .category__title {
-      margin-bottom: var(--mb-0-25);
-  }
-  
-  .category__data:hover .category__img {
-      transform: translateY(-.5rem);
-  }
-  
-  
-  /*================= ABOUT =====================*/
-  .about__container {
-      row-gap: 2rem;
-  }
-  
-  .about__data {
-      text-align: center;
-  }
-  
-  .about__description {
-      margin-bottom: var(--mb-2);
-  }
-  
-  .about__img {
-      width: 200px;
-      justify-self: center;
-  }
-  
-  
-  /*================= TRICK OR TREAT =============*/
-  
-  .perfume__container {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.2rem;
-      padding-top: 0;
-    margin-top: -50vh;
+                <div class="trick__content">
+                    <br><br>
+                    <img style="cursor: pointer;" onclick="window.location='https://www.mercadolivre.com.br/o-boticario-lily-edp-75ml-para-mulher/p/MLB6166115?pdp_filters=seller_id:176774316';"
+                    src="img/lili.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title">O Boticário Lily 75ML</h3>
+                </div>  
 
-}
+                 <div class="trick__content">
+                    <br><br>
+                    <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2611285689-perfume-scuderia-ferrari-red-75-ml-_JM?';"
+                    src="img/ferrarired.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title">Ferrari Red 75ml</h3>
+                </div>
+                
+                <div class="trick__content">
+                    <br><br>
+                    <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022144418-perfume-importado-calvin-klein-_JM';"
+                    src="img/calvin.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title">CalvinKlein Everyone</h3>
+                </div>
+
+                 <div class="trick__content">
+                    <br><br>
+                    <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2222536919-polo-black-edt-masc--_JM?searchVariation=174358978824';"
+                    src="img/polo.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title">Polo Black EDT 125ml</h3>
+                </div>   
+
+                 <div class="trick__content">
+                    <br><br>
+                    <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2611342042-perfume-billian-for-men-100ml-_JM';"
+                    src="img/billion.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <br><br>
+                    <h3 class="trick__title">Billion For Men 100ml</h3>
+                </div>    
+                
+
+                
+                 <div class="trick__content">
+                    <img style="cursor: pointer;" onclick="window.location='https://www.mercadolivre.com.br/gabriela-sabatini-edt-60ml-para-mulher/p/MLB6141503?pdp_filters=seller_id:176774316';"
+                    src="img/gabriela.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title">Gabriela Sabatini EDT 60ML </h3>
+                </div>        
+                
+                 <div class="trick__content">
+                     <br>
+                       <br>
+                    <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2605759406-love-secret-vanilla-_JM?searchVariation=174382171743';"
+                    src="img/vanilla.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title">Love Secret Kit Vanilla Hidratante</h3>
+                </div>        
+               
+                
+
+                <div class="trick__content">
+                    <img style="cursor: pointer;" onclick="window.location='https://www.mercadolivre.com.br/lacoste-l1212-blanc-edt-50ml-para-homem/p/MLB18645328?pdp_filters=seller_id:176774316';"
+                    src="img/lacoste.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <br><br>
+                    <h3 class="trick__title">Lacoste Blanc EDT 50 ml</h3>
+                </div>                  
 
 
+                <div class="trick__content">
+                    <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2182524701-perfume-elysee-_JM';"
+                    src="img/elysee.png"
+                    alt=""
+                    class="trick__img"
+                    />
+                    <h3 class="trick__title" style="margin-top: 8px;">Elysée Eau De Parfum 50ml</h3>
+                    
+                        </div>            
 
-.perfume__container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
-    padding-top: 0;
-  margin-top: -50vh;
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2182568639-perfume-botica-214-_JM';"
+                src="img/botica.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Botica 214 Dark Mint Eau De Parfum 90ml</h3>               
+            </div>
 
-}
-  
-  .trick__content {
-      position: relative;
-      background: transparent;
-      border-radius: 0.5rem;
-      color:  black;padding: 1.0rem 0 0.5rem 0;
-      text-align: center;
-      overflow: hidden;
-      padding-bottom: 9%;
-      padding-left: 0%;
-      padding-right: 0%;
-  }
-  
-  .trick__img {
-      width: 45%;
-      transition: .2s;
-  }
-  
-  .trick__subtitle,
-  .trick__price {
-      display: block;
-  }
-  
-  .trick__subtitle {
-      font-size: 0.7em;
-      margin-bottom: var(--mb-0-5);
-  }
-  
-  .trick__title,
-  .trick__price {
-      color: black;
-      font-weight: 500;
-      font-size: 0.65em;
-  }
-  
-  .trick__button {
-      display: inline-flex;
-      padding: .5rem;
-      border-radius: .25rem .25rem .75rem .25rem;
-      position: absolute;
-      right: -3rem;
-      bottom: 0;
-  }
-  
-  .trick__icon {
-      font-size: 1.10rem;
-      color: var(--title-color);
-  }
-  
-  .trick__content:hover .trick__img {
-      transform: translateY(-.5rem)
-  }
-  
-  .trick__content:hover .trick__button {
-      right: 0;
-  }
-  
-  
-  /*================= DISCOUNT ===================*/
-  .discount__container {
-      background: var(--container-color);
-      border-radius: 1rem;
-      padding: 2.5rem 0 1.5rem;
-      row-gap: .75rem;
-  }
-  
-  .discount__data {
-      text-align: center;
-  }
-  
-  .discount__title {
-      font-size: var(--h2-font-size);
-      margin-bottom: var(--mb-2);
-  }
-  
-  .discount__img {
-      width: 200px;
-      justify-self: center;
-  }
-  
-  
-  /*=============== NEW ARRIVALS ==================*/
-  .new__container {
-      padding-top: 1rem;
-  }
-  
-  .new__img {
-      width: 120px;
-      margin-bottom: var(--mb-0-5);
-      transition: .3s;
-  }
-  
-  .new__content {
-      position: relative;
-      background: var(--container-color);
-      width: 242px;
-      padding: 2rem 0 1.5rem 0;
-      border-radius: .75rem;
-      text-align: center;
-      overflow: hidden;
-  }
-  
-  .new__tag {
-      position: absolute;
-      top: 8%;
-      left: 8%;
-      background-color: var(--first-color);
-      color: var(--title-color);
-      font-size: var(--small-font-size);
-      padding: .25rem .5rem;
-      border-radius: .25rem;
-  }
-  
-  .new__title {
-      font-size: var(--normal-font-size);
-      font-weight: var(--font-medium);
-  }
-  
-  .new__subtitle {
-      display: block;
-      font-size: var(--small-font-size);
-      margin-bottom: var(--mb-0-5);
-  }
-  
-  .new__prices {
-      display: inline-flex;
-      align-items: center;
-      column-gap: .5rem;
-  }
-  
-  .new__price {
-      font-weight: var(--font-medium);
-      color: var(--title-color);
-  }
-  
-  .new__discount {
-      color: var(--first-color);
-      font-size: var(--smaller-font-size);
-      text-decoration: line-through;
-      font-weight: var(--font-medium);
-  }
-  
-  .new__button {
-      display: inline-flex;
-      padding: .5rem;
-      border-radius: .25rem .25rem .75rem .25rem;
-      position: absolute;
-      bottom: 0;
-      right: -3rem;
-  }
-  
-  .new__icon {
-      font-size: 1.25rem;
-  }
-  
-  .new__content:hover .new__img {
-      transform: translateY(-.5rem);
-  }
-  
-  .new__content:hover .new__button {
-      right: 0;
-  }
-  
-  /*=============== NEWSLETTER ====================*/
-  .newsletter__description {
-      text-align: center;
-      margin-bottom: var(--mb-1-5);
-  }
-  
-  .newsletter__form {
-      background: var(--container-color);
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      border-radius: .75rem;
-  }
-  
-  .newsletter__input {
-      width: 70%;
-      padding: 0 .5rem;
-      background: none;
-      color: var(--title-color);
-  }
-  
-  .newsletter__input::placeholder {
-      color: var(--text-color);
-  
-  }
-  
-  /*=============== FOOTER ========================*/
-  .footer {
-      position: relative;
-      overflow: hidden;
-  bottom: 5vh;}
-  
-  .footer__img-one,
-  .footer__img-two {
-      position: absolute;
-      transition: .3s;
-  }
-  
-  .footer__img-one {
-      width: 100px;
-      top: 6rem;
-      right: -2rem;
-  }
-  
-  .footer__img-two {
-      width: 150px;
-      bottom: 4rem;
-      right: 4rem;
-  }
-  
-  .footer__img-one:hover,
-  .footer__img-two:hover {
-      transform: translateY(-.5rem);
-  }
-  
-  .footer__container {
-      row-gap: 2rem;
-  }
-  
-  .footer__logo {
-      display: flex;
-      align-items: center;
-      column-gap: .5rem;
-      margin-bottom: var(--mb-1);
-      font-weight: var(--font-medium);
-      color: var(--title-color);
-  }
-  
-  .footer__logo-img {
-      width: 20px;
-  }
-  
-  .footer__description {
-      margin-bottom: var(--mb-2-5);
-  }
-  
-  .footer__social {
-      display: flex;
-      column-gap: .75rem;
-  }
-  
-  .footer__social-link {
-      display: inline-flex;
-      background: var(--container-color);
-      padding: .25rem;
-      border-radius: .25rem;
-      color: var(--title-color);
-      font-size: 2.1rem;
-  }
-  
-  .footer__social-link:hover {
-      background: var(--body-color);
-  }
-  
-  .footer__title {
-      font-size: var(--h3-font-size);
-      margin-bottom: var(--mb-1);
-  }
-  
-  .footer__links {
-      display: grid;
-      row-gap: .35rem;
-  }
-  
-  .footer__link {
-      font-size: var(--small-font-size);
-      color: var(--text-color);
-      transition: .3s;
-  }
-  
-  .footer__link:hover {
-      color: var(--title-color);
-  }
-  
-  .footer__copy {
-      display: block;
-      text-align: center;
-      font-size: var(--small-font-size);
-      margin-top: 4.5rem;
-  }
-  
-  
-  /*================ SCROLL UP ==================*/
-  .scrollup {
-      position: fixed;
-      background: var(--container-color);
-      right: 1rem;
-      bottom: -20%;
-      display: inline-flex;
-      padding: .3rem;
-      border-radius: .25rem;
-      z-index: var(--z-tooltip);
-      opacity: .8;
-      transition: .4s;
-  }
-  
-  .scrollup__icon {
-      font-size: 1.25rem;
-      color: var(--title-color);
-  }
-  
-  .scrollup:hover {
-      background: var(--container-color);
-      opacity: 1;
-  }
-  
-  /* Show Scroll Up*/
-  .show-scroll {
-      bottom: 3rem;
-  }
-  
-  /*================== SCROLL BAR =====================*/
-  ::-webkit-scrollbar {
-      width: 0.6rem;
-      background: #d2a9a9;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-      background: #272525;
-      border-radius: .5rem;
-  }
-  /*=================== BREAKPOINTS ===================*/
-  
-  /* For smaLL devices */
-  @media screen and (max-width: 320px) {
-      .container {
-          margin-left: var(--mb-1);
-          margin-right: var(--mb-1);
-      }
+            <div class="trick__content">                
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2166412626-zaad-95-ml-_JM';"
+                src="img/zaad.png"
+                alt=""
+                class="trick__img"/>
+                <h3 class="trick__title">Zaad 95ML</h3>                
+                </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://www.mercadolivre.com.br/o-boticario-malbec-deo-colnia-100ml-para-homem/p/MLB16119462?pdp_filters=seller_id:176774316';"
+                src="img/tradicional.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Malbec Colonia 100ml</h3>
+            </div>
+            
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2169179427-perfume-eggeo-dolce-_JM';"
+                src="img/eggeo.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Egeo Dolce 90ml</h3>
+                             
+            </div>
+            
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2169175814-perfume-coffee-woman-_JM';"
+                src="img/coffee.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 style="margin-top:8px;" class="trick__title">Coffee Woman Seduction 100ml</h3>             
+            </div>
+            
+            
+                <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2166410885-quasar-classico-125ml-_JM';"
+                src="img/quasar.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Quasar Classico 125ml</h3>
+                
+            </div>
+            
+                <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2165443812-perfume-malbec-flame-_JM';"
+                src="img/flame.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Malbec Flame 100ml</h3>
+                             
+            </div>           
+            
+            
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2081580077-joop-hoomme-_JM';"
+                src="img/joop.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Joop! Homme EDT 75ml</h3>              
+               
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2612260566-kit-udv-paris-for-men-100-ml200-ml-_JM';"
+                src="img/udv.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Kit Udv Paris 100 Ml/200</h3>
+               
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2081598953-scuderia-ferrari-black-_JM';"
+                src="img/ferrari.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Ferrari Scuderia Black 125ml</h3>              
+               
+            </div>
+            
+            
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2611475075-perfume-club420-men-100-ml-_JM';"
+                src="img/club.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Club 420 Exclusive 100ml</h3>
+               
+            </div>
+            
+            
+            <!-- <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1961543354-perfume-gabriela-sabatini-_JM';"
+                src="img/night.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Gabriela Sabatini Night 30ml</h3>
+                       
+            </div>        -->
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022106139-perfume-juliana-paes-glam-_JM';"
+                src="img/juliana.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Juliana Paes Glam 100ml</h3>
+                
+            </div>
+
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2041840825-perfume-miss-new-brand-_JM';"
+                src="img/miss.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Miss For Women</h3>
+                
+            </div>
+
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757815-promocoperfume-importado-antnio-bandeira-_JM';"
+                src="img/silver.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Antônio Bandeira</h3>
+                      
+            </div>
+
+            
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817757678-so-hojeperfume-importado-da-linha-antnio-bandeira-_JM';"
+                src="img/roxo.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Her Golden Desire 80ml</h3>
+                   
+            </div>
+            
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817763372-blue-seduction-da-linha-antnio-bandeira-_JM';"
+                src="img/blueseduction.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Blue Seduction 100ML EDT</h3>
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2105573110-perfume-black-extreme-_JM';"
+                src="img/everlast.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Everlast Black 100ml</h3>                    
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1865998035-deodorant-the-secret-ouro-_JM';"
+                src="img/deo.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Deodorant The Secret 150ml</h3>
+            </div>
+
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1961549634-perfume-silver-scent-_JM';"
+                src="img/scent.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Jaques Bogart Silver 100ml</h3>
+            </div>
+
+
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2007020346-perfume-wild-adventure-_JM';"
+                src="img/wild.png"
+                alt=""
+                class="trick__img"/>
+                <br>
+                <h3  class="trick__title">Wild Adventure 100ml</h3>
+                
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022092964-perfume-importado-camaro-_JM';"
+                src="img/camaro.png"
+                alt=""
+                class="trick__img"/>
+                <br>
+                <h3  class="trick__title">Colônia Camaro Blue 100ml</h3>
+                      
+            </div>
+            
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022093309-perfume-importado-colcci-urbana-_JM';"
+                src="img/urban.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Colcci Urban 100ml</h3>
+                 
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2611306682-perfume-ger-golden-secret-80-ml-_JM';"
+                src="img/hergolden.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Her SecretTempation 80ML EDT </h3>
+                   
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1817760613-perfumes-importados-da-linha-antnio-bandeira-100-original-_JM';"
+                src="img/king.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">King Of Seduction 200ml</h3>
+                       
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1952965324-perfume-importado-hugo-man-125-ml-_JM';"
+                src="img/hugo.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Hugo Boss Man 125ML</h3>
+                
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://www.mercadolivre.com.br/antonio-banderas-the-golden-secret-edt-200ml-para-homem/p/MLB6140284?pdp_filters=seller_id:176774316';"
+                src="img/antonioBandera.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Antonio Banderas Eau de Toilette 200ml</h3>
+              
+            </div>         
+            <div class="trick__content">
+                
+            <br>
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1966784273-la-petite-fleur-romantique-_JM';"
+                src="img/petite2.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">La Petit Fleur Romantique 100ml</h3>
+                       
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1966787367-power-boost-for-men-_JM';"
+                src="img/powerboost.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Power Boost 100ml</h3>
+                      
+            </div>          
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1966773274-hugo-just-different-_JM';"
+                src="img/hugojust.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">HugoBoss Just 125ml</h3>
+                       
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1819117685-perfume-importado-da-linha-antnio-bandeira100-original-_JM';"
+                src="img/power.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Power of Seduction 100ml</h3>
+                 
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1961555227-perfume-fantasy-britney-spears-_JM';"
+                src="img/britney.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">BritneySpears Fantasy 100ML</h3>
+                  
+            </div>
+
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-1910915124-her-secret-desire-antnio-bandeira-_JM';"
+                src="img/roxokit.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title"> Her Secret Desire KIT 80ml</h3>
+                   
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2051174604-love-secretbelle-_JM';"
+                src="img/love.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Love Secret</h3>
+                     
+            </div>
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2041847214-perfume-coeur-frivoleeau-de-parfum-_JM';"
+                src="img/coeur.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Coeur Frivole 100ml</h3>
+               
+            </div>            
+            <div class="trick__content">      
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2611415341-perfume-club420-pink-100ml-_JM';"
+                src="img/420.png"
+                alt=""
+                class="trick__img"/>
+                <h3  class="trick__title">Linn Young Club420 100ml</h3>                     
+            </div>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>   
+            <h2 style="text-align:center;">Acessórios 🎮📲</h2>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2079297943-caixa-de-somportable-speaker-_JM';"
+                src="img/speaker.png"
+                alt=""
+                class="trick__img"
+                />
+                <h3 class="trick__title">Speaker</h3>
+                <span class="trick__subtitle">Bluetooth+FM</span>
+                
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>     
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2089756538-barbeador-inova-_JM';"
+                src="img/inova.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Maquina Cabelo Portátil</h3>
+                <span class="trick__subtitle">Profissional Inova</span>
+                
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2091061986-caixa-bluetooth-port-_JM';"
+                src="img/water.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Speaker A Prova da Agua</h3>
+                <span class="trick__subtitle">Bluetooth Inova</span>
+             
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2089748544-carregador-smart-sensor-s5-_JM';"
+                src="img/smart.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Carregador Smart Sensor</h3>
+                <span class="trick__subtitle">Suporte para veiculos Carregador Sem fio</span>
+               
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2089748544-carregador-smart-sensor-s5-_JM';"
+                src="img/universal.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Carregador USB Universal</h3>
+                <span class="trick__subtitle">Conecta na tomada saida USB</span>
+             
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2095896533-carregador-de-celular-fantasy-_JM';"
+                src="img/charger.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Carregador Wireless Fantasy</h3>
+                <span class="trick__subtitle">Celulares que aceitam</span>
+               
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022106139-perfume-juliana-paes-glam-_JM';"
+                src="img/lavalier.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Lavalier Microfone</h3>
+                <span class="trick__subtitle">Gravações de alta qualidade</span>
+              
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022106139-perfume-juliana-paes-glam-_JM';"
+                src="img/extensor.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Extensor de Portas USB</h3>
+               
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2091077638-caixa-bluetooth-_JM';"
+                src="img/color.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Speaker Ianoice Bluetooth Colors</h3>
+               
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='hhttps://produto.mercadolivre.com.br/MLB-2096009050-shawn-star-_JM';"
+                src="img/pelo.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Aparador de Pelos Nasal</h3>
+                
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2095928470-mobile-plone-video-amplifier-_JM';"
+                src="img/jogo.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Amplificador de Imagem do cel Para Games</h3>
+            
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>
+
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2095910988-campainha-de-casazhishan-_JM';"
+                src="img/doorbell.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Campainha De Casa Doorbell Zhishan</h3>
+                
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>                             
+            <div class="trick__content">
+                <img style="cursor: pointer;" onclick="window.location='https://produto.mercadolivre.com.br/MLB-2022106139-perfume-juliana-paes-glam-_JM';"
+                src="img/adaptador.png" alt="" class="trick__img"/>
+                <h3 class="trick__title">Adaptador para Bluetooth</h3>
+            
+                <button class="button trick__button">
+                <i class="bx bx-cart-alt trick__icon"></i>
+                </button>
+            </div>                  
+            
+        </div>
+        </section>
 
       
-.js-Carousel {
-    background: white;
-    height: 455px;
-    margin-bottom: 2vh;
-  margin-top: 30vh;
-    overflow: hidden;
-    position: relative;
-    width: 800px;
-  }
-  .js-Carousel > ul {
-    height: 200px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 9999px;
-  }
-  .js-Carousel > ul li {
-    display: inline-block;
-    float: left;
-    width: 500px;
-    transition: margin-left 0.3s ease;
-  }
-  .js-Carousel > ul li img {
-   text-align:center;
-   width: 350px;
-   height: 350px;
-  }
-  .js-Carousel .js-Carousel-arrowPrev,
-  .js-Carousel .js-Carousel-arrowNext {
-    background: transparent;
-    border: 0;
-    color: #e0e0e0;
-    cursor: pointer;
-    font: 400 10em sans-serif;
-    height: 200px;
-    outline: 0;
-    position: absolute;
-    top: 0;
-    text-shadow: 0 0 10px #444444;
-    width: 90px;
-    transition: all 0.2s ease;
-  }
-  .js-Carousel .js-Carousel-arrowPrev:hover,
-  .js-Carousel .js-Carousel-arrowNext:hover {
-    color: #aaaaaa;
-  }
-  .js-Carousel .js-Carousel-arrowPrev {
-    left: 0;
-  }
-  .js-Carousel .js-Carousel-arrowNext {
-    right: 0;
-  }
-  .js-Carousel .js-Carousel-dots {
-    display: inline-block;
-    height: 1.25em;
-    margin: 0;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    width: auto;
-  }
-  .js-Carousel .js-Carousel-dots li {
-    background: #aaaaaa;
-    border-radius: .75em;
-    cursor: pointer;
-    display: inline-block;
-    height: .75em;
-    margin: 0 .75em;
-    width: .75em;
-    transition: all 0.2s ease;
-  }
-  .js-Carousel .js-Carousel-dots li.is-active {
-    background: #ffffff;
-    box-shadow: 0 0 3px 3px #ddd;
-  }
-  .js-Carousel .js-Carousel-dots li:hover {
-    background: #f5f5f5;
-  }
-  .js-Carousel .js-Carousel-btnStop,
-  .js-Carousel .js-Carousel-btnPlay {
-    background: #aaaaaa;
-    border: 0;
-    cursor: pointer;
-    height: 2.25em;
-    position: absolute;
-    bottom: 1em;
-    left: 2em;
-    text-align: center;
-    width: 5em;
-    transition: all 0.2s ease;
-  }
-  .js-Carousel .js-Carousel-btnStop:hover,
-  .js-Carousel .js-Carousel-btnPlay:hover {
-    background: #f5f5f5;
-  }
-  .js-Carousel .js-Carousel-btnStop {
-    left: 100px;
-  }
-  
-  
-      .home__img {
-          height: 120px;
-      }
-      .home__data {
-          /* color: blue; */
-      display: flex;/* width: 10vw; */font-size: 1em;height: 1vh;flex-direction: column-reverse;align-items: center;}
-      a.nav__logo {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
-        font-size: 1.8em;
-        margin-left: -5vw;
-    }
-  
-      .home__buttons {
-          flex-direction: column;
-          width: max-content;
-          row-gap: 1rem;
-      }
-  
-      .category__container,
-      .perfume__container {
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        font-size: 0.75em;
-      }
-  }
-  
-  /* For medium devices */
-  @media screen and (min-width: 576px) {
-      .about__container {
-          grid-template-columns: .8fr;
-          justify-content: center;
-      }
-  
-      .newsletter__container {
-          display: grid;
-          grid-template-columns: .7fr;
-          justify-content: center;
-      }
-  
-      .newsletter__description {
-          padding: 0 3rem;
-      }
-  }
-  
-  @media screen and (min-width: 767px) {
-      body {
-          margin: 0;
-      }
-  
-      .section {
-          padding: 4.5rem 0 2rem;
-      }
-  
-      .nav {
-          height: calc(var(--header-height) + 1.5rem);
-      }
-  
-      .nav__img,
-      .nav__close,
-      .nav__toggle {
-          display: none;
-      }
-  
-      .nav__list {
-          flex-direction: row;
-          column-gap: 3rem;
-      }
-  
-      .nav__link {
-          text-transform: initial;
-          font-weight: initial;
-      }
-  
-      .home__content {
-          padding: 3rem 0 1rem;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 0.5rem;
-      margin-bottom: 10vh;}
-  
-      .home__img {
-        height: 350px;
-        margin-left: 30vw;
-      }
-  
-      .swiper-pagination {
-          margin-top: var(--mb-2);
-      }
-  
-      .category__container {
-          grid-template-columns: repeat(3, 200px);
-          justify-content: center;
-      }
-  
-      .about__container {
-          grid-template-columns: repeat(2, 1fr);
-          align-items: center;
-      }
-  
-      .about__title,
-      .about__data {
-          text-align: initial;
-      }
-  
-      .about__img {
-          width: 250px;
-      }
-  
-      .perfume__container {
-          margin-bottom: 30vh;grid-template-columns: repeat(4, 200px);
-          margin-top: 1vh;justify-content: center;
-          gap: 1.3rem;
-      }
-  
-      .discount__container {
-          grid-template-columns: repeat(2, max-content);
-          justify-content: center;
-          align-items: center;
-          column-gap: 3rem;
-          padding: 3rem 0;
-          border-radius: 3rem;
-      }
-      
-      .discount__img {
-          width: 350px;
-          order: -1; /*Invert image side*/
-      }
-  
-      .discount__data {
-          padding-right: 6rem;
-      }
-  
-      .newsletter__container {
-          grid-template-columns: 0.5fr;
-      }
-  
-      .footer__container {
-          grid-template-columns: repeat(4, 1fr);
-          justify-items: center;
-          column-gap: 1rem;
-      }
-  
-      .footer__img-two {
-          right: initial;
-          bottom: 0;
-          left: 15%;
-      }
-  
-  }
-  
-  /* For Large devies */
-  @media screen and (min-width: 992px) {
-      .container {
-          margin-left: auto;
-          margin-right: auto;
-      /* background-image: url("/img/bg.png"); 
-    background-repeat: no-repeat;*/
-} 
-  
-
-    .perfume__container {
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-      .section__title {
-          font-size: var(--h1-font-size);
-          margin-bottom: 3rem;
-      }
-  
-      .home__content {
-          /* padding-top: 9rem; */
-          /* gap: 3rem; */
-      margin-top: 4vh;}
-  
-      .home__group {
-          padding-top: 0;
-      }
-  
-      .home__img {
-          height: 400px;
-          transform: translateY(-3rem);
-      }
-  
-      .home__indicator {
-          top: initial;
-          right: initial;
-          bottom: 15%;
-          left: 45%;
-      }
-  
-      .home__indicator::after {
-          top: 0;
-          height: 75px;
-      }
-  
-      .home__details-img {
-          /* bottom: 0; */
-          right: 58%;
-      }
-  
-      .home__title {
-          margin-bottom: var(--mb-1-5);
-          font-size: 4rem; /**/
-      }
-  
-      .home__description {
-          margin-bottom: var(--mb-2-5);
-          padding-right: 2rem;
-      }
-  
-      .category__container {
-          column-gap: 8rem;
-      }
-  
-      .category__img {
-          width: 200px;
-      }
-  
-      .about__img {
-          width: 350px;
-      }
-  
-      .about__description {
-          padding-right: 2rem;
-      }
-  
-      .perfume__container {
-          gap: 3.5rem;
-      margin-top: 1vh;}
-  
-      .trick__content {
-          border-radius: 1.5rem;
-      }
-  
-      .trick__img {
-          width: 12vw;
-      }   
-  
-      .trick__title {
-          font-size: var(--h3-font-size);
-      }
-  
-      .discount__container {
-          column-gap: 7rem;
-      }
-  
-      .new__content {
-          width: 310px;
-          border-radius: 1rem;
-          padding: 2rem 0;
-      }
-  
-      .new__img {
-          width: 150px;
-      }
-  
-      .new__img,
-      .new__subtitle {
-          margin-bottom: var(--mb-1);
-      }
-  
-      .new__title {
-          font-size: var(--h3-font-size);
-      }
-  
-      .footer__copy {
-          margin-top: 6rem;
-      }
-  }
-  
-  @media screen and (min-width: 1200px) {
-      .home__img {
-          height: 420px;
-      }
-  
-      .swiper-pagination {
-          margin-top: var(--mb-2-5);
-      }
-  
-      .footer__img-one {
-          width: 120px;
-      }
-  
-      .footer__img-two {
-          width: 180px;
-          top: 30%;
-          left: -3%;
-      }
-  }
-
-  
-
-  @media screen and (min-width: 440px) {
-    .home__img {
-        height: 200px;
-    width: 450px;}
-
-.home__group {font-size: 1em;}
-
-    .swiper-pagination {
-        margin-top: var(--mb-2-5);
-    }
-    .home__title {
-        font-size: 1em;
-    }
-    .footer__img-one {
-        width: 120px;
-    }
-    .home__subtitle {
-        font-size: var(--h3-font-size);
-        text-transform: uppercase;
-        margin-bottom: var(--mb-1);
-    }
-    .home__details-title, .home__details-subtitle {
-        
-    margin-top: -4vw;
-}
-    div.home__content.grid {
-        
-    display: flex;}
-
-    .home__buttons {
-
-    }
-
-    .footer__img-two {
-        width: 180px;
-        top: 30%;
-        left: -3%;
-    }
+        <section class="section discount" id="sobre">
+            <h2 class="section__title">Há 3 anos no ramo de Perfumes e importações<br>Compras somente no MercadoLivre sinta-se seguro</h2>
+            </section> 
+    </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="nav__logo">          
+                🛒MizaShow 
+                </a>          
     
-}
-
-@media screen and (min-width: 540px) {
-    .home__img {
-        height: 300px;
-    width: 450px;}
-
-.home__group {font-size: 1em;}
-
-    .swiper-pagination {
-        margin-top: var(--mb-2-5);
-    }
-    .home__title {
-        font-size: 1em;
-    }
-    .footer__img-one {
-        width: 120px;
-    }
-    .home__subtitle {
-        font-size: var(--h3-font-size);
-        text-transform: uppercase;
-        margin-bottom: var(--mb-1);
-    }
-    .home__details-title, .home__details-subtitle {
-        
-    margin-top: -4vw;
-}
-    div.home__content.grid {
-        
-    display: flex;}
-
-    .home__buttons {
-
-    }
-
-    .footer__img-two {
-        width: 180px;
-        top: 30%;
-        left: -3%;
-    }
+                <p class="footer__description">
+                Tudo em um só lugar isso é Miza Show! <br />
+                </p>
     
-}@media screen and (min-width: 640px) {
-    .home__img {
-        height: 400px;
-    width: 450px;}
-
-.home__group {font-size: 1em;}
-
-    .swiper-pagination {
-        margin-top: var(--mb-2-5);
-    }
-    .home__title {
-        font-size: 1em;
-    }
-    .footer__img-one {
-        width: 120px;
-    }
-    .home__subtitle {
-        font-size: var(--h3-font-size);
-        text-transform: uppercase;
-        margin-bottom: var(--mb-1);
-    }
-    .home__details-title, .home__details-subtitle {
-        
-    margin-top: -4vw;
-}
-    div.home__content.grid {
-        
-    display: flex;}
-
-    .home__buttons {
-
-    }
-
-    .footer__img-two {
-        width: 180px;
-        top: 30%;
-        left: -3%;
-    }
+                <div class="footer__social">            
+                
+                <a
+                    href="https://www.instagram.com/mizashow.of"
+                    target="_blank"
+                    class="footer__social-link"
+                >
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a
+                    href="https://wa.me/5511986824480"
+                    target="_blank"
+                    class="footer__social-link"
+                >
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
     
-}@media screen and (min-width: 740px) {
-    .home__img {
-        height: 500px;
-    width: 450px;}
-
-.home__group {font-size: 1em;}
-
-    .swiper-pagination {
-        margin-top: var(--mb-2-5);
-    }
-    .home__title {
-        font-size: 1em;
-    }
-    .footer__img-one {
-        width: 120px;
-    }
-    .home__subtitle {
-        font-size: var(--h3-font-size);
-        text-transform: uppercase;
-        margin-bottom: var(--mb-1);
-    }
-    .home__details-title, .home__details-subtitle {
-        
-    margin-top: -4vw;
-}
-    div.home__content.grid {
-        
-    display: flex;}
-
-    .home__buttons {
-
-    }
-
-    .footer__img-two {
-        width: 180px;
-        top: 30%;
-        left: -3%;
-    }
+                <a
+                href="https://twitter.com/mizaels23311601"
+                target="_blank"
+                class="footer__social-link"
+                >
+                <i class="bx bxl-twitter"></i>
+                </a>
     
-}
-@media screen and (min-width: 140px) {
-    .home__img {
-        height: 25vw;
-        width: 30vh;
-        transform: translate(-20%, -5%);
-
-    position: fixed;}
-
-.home__group {font-size: 1em;}
-
-    .swiper-pagination {
-        margin-top: var(--mb-2-5);
-    }
-    .home__title {
-        font-size: 1em;
-    }
-    .footer__img-one {
-        width: 120px;
-    }
-    .home__subtitle {
-        font-size: var(--h3-font-size);
-        text-transform: uppercase;
-        margin-bottom: var(--mb-1);
-    }
-
-    .home__details-title, .home__details-subtitle {        
-    margin-top: -4vw;
+                <a
+                    href="https://www.tiktok.com/@mizashow.of"
+                    target="_blank"
+                    class="footer__social-link"
+                >
+                    <i class="bx bxl-tiktok"></i>
+                </a>
     
+                <a
+                    href="https://www.youtube.com/channel/UC2Vn19Tf9PL9VuNq-yQkNJg/videos"
+                    target="_blank"
+                    class="footer__social-link"
+                >
+                    <i class="bx bxl-youtube"></i>
+                </a>
+    
+                </div>
+            </div>  
+           
+    
+            <div class="footer__content">
+                <h3 class="footer__title">Email</h3>
+                <p>mizaelaraujoshow@gmail.com</p>
 
-    }
-    div.home__content.grid {
-        
-    display: flex;
-    }
-
-    .home__buttons {
-
-    }
-
-    .footer__img-two {
-        width: 180px;
-        top: 30%;
-        left: -3%;
-    }
-}
+            </div>    
+            
+            </div>
+    
+            <span class="footer__copy">&#169; Redesign Caio T The Unlicense </span>      
+        </footer>
+    
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+        </a>
+    
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+    
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+    
+        <!--=============== MAIN JS ===============-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1328711105721418"
+        crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+        </body>
+    </html>   
