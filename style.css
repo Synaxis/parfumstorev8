@@ -63,8 +63,10 @@ a.nav__logo {
     height: 3em;
     margin: 0;
     position: absolute;
-    bottom: 1em;
-    right: 1em;
+    top: 50%;
+ left: 50%;
+ transform: translate(-50%, 230%);bottom: 1em;
+    transform: translate 50% -50%;translate: 50% -50%;
     width: auto;
   }
   .js-Carousel .js-Carousel-dots li {
