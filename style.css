@@ -9,7 +9,7 @@ a.nav__logo {
 .js-Carousel {
     background: white;
     height: 455px;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   margin-top: 1vh;
     overflow: hidden;
     position: relative;
@@ -60,7 +60,7 @@ a.nav__logo {
   }
   .js-Carousel .js-Carousel-dots {
     display: inline-block;
-    height: 1.25em;
+    height: 3em;
     margin: 0;
     position: absolute;
     bottom: 1em;
@@ -68,7 +68,8 @@ a.nav__logo {
     width: auto;
   }
   .js-Carousel .js-Carousel-dots li {
-    background: #aaaaaa;border-radius: .75em;
+    background: #aaaaaa;
+    border-radius: .75em;
     cursor: pointer;
     display: inline-block;
     height: .75em;
@@ -354,7 +355,7 @@ a.nav__logo {
   
   /*================= REUSABLE CSS CLASSES ====================*/
   .section {
-      padding: 18rem 0 3rem;
+      padding: 24rem 0 3rem;
   }
   
   .section__title {
