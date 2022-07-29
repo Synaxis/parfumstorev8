@@ -1,9 +1,11 @@
 a.nav__logo {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 1.75em;
+    font-size: 1.9em;
     margin-left: -2vw;
   }
+
+
 
   
 .js-Carousel {
@@ -186,6 +188,11 @@ a.nav__logo {
       font-size: 1.2em;
   }
   
+  img.trick__img:hover {
+  zoom: 105%;
+
+}
+  
   a.nav__link {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
@@ -194,24 +201,33 @@ a.nav__logo {
   
   div.trick__content {
     padding: 1vw;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;background-color: #f99dd038;}
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: #ffffff38;
+    }
   /*=================== VARIABLES CSS =======================*/
   :root {
       --header-height: 3.5rem;
   
       /*=============== Colors =============*/
       --hue: 14;
-      --first-color: hsl(var(--hue), 91%, 54%);
-      --first-color-alt: hsl(var(--hue), 91%, 50%);
-      --title-color: hsl(var(--hue), 4%, 100%);
-      --text-color: hsl(var(--hue), 4%, 85%);
-      --text-color-light:  hsl(var(--hue), 4%, 55%);
+      --first-color:
+      hsl(var(--hue), 91%, 54%);
+      --first-color-alt:
+      hsl(var(--hue), 91%, 50%);
+      --title-color:
+      hsl(var(--hue), 4%, 100%);
+      --text-color:
+      hsl(var(--hue), 4%, 85%);
+      --text-color-light:
+      hsl(var(--hue), 4%, 55%);
   
     --body-color: white;
-    --container-color: linear-gradient(136deg, hsl(265deg 39% 49% / 85%) 0%, hsl(18deg 23% 70%) 100%);
+    --container-color:
+      linear-gradient(136deg, hsl(265deg 15% 52% / 85%) 0%, hsl(296deg 39% 47%) 100%);
   
       /*================== Font and typography =============*/
-      --body-font: 'Poppins', sans-serif;
+      --body-font:
+      'Poppins', sans-serif;
       --biggest-font-size: 2rem;
       --h1-font-size: 1.5rem;
       --h2-font-size: 1.25rem;
@@ -383,11 +399,12 @@ a.nav__logo {
   /*================= HEADER ===================*/
   .header{
       width: 100%;
-      background: #b99ea5;
+      background: #8b87ff;
       position: fixed;
       margin-bottom: 3vh;
       top: 0;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;left: 0;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      left: 0;
       z-index: var(--z-fixed);
   }
   /*================= NAV ======================*/
@@ -405,6 +422,7 @@ a.nav__logo {
       display: flex;
       align-items: center;
       column-gap: .5rem;
+      letter-spacing: 2px;
       font-weight: var(--font-medium);
   }
   
@@ -416,7 +434,8 @@ a.nav__logo {
   .nav__logo,
   .nav__toggle,
   .nav__close {
-      color: var(--title-color);
+      color: hsl(241deg 100% 4%);
+      letter-spacing:;
   }
   
   .nav__toggle {
@@ -1016,7 +1035,7 @@ a.nav__logo {
   /*================== SCROLL BAR =====================*/
   ::-webkit-scrollbar {
       width: 0.6rem;
-      background: #d2a9a9;
+      background: #ffffff;
   }
   
   ::-webkit-scrollbar-thumb {
@@ -1242,9 +1261,11 @@ a.nav__logo {
       }
   
       .perfume__container {
-          margin-bottom: 30vh;grid-template-columns: repeat(4, 200px);
-          margin-top: 1vh;justify-content: center;
-          gap: 1.3rem;
+          margin-bottom: 30vh;
+          grid-template-columns: repeat(5, 180px);
+          margin-top: 1vh;
+          justify-content: center;
+          gap: 0.5rem;
       }
   
       .discount__container {
