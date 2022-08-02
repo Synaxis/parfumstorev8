@@ -20,6 +20,7 @@ a.nav__logo {
     height: 260px;
     list-style: none;
     margin: 0;
+    background-color: #e9c7c7;
     padding: 0;
     width: 9999px;
   }
@@ -204,7 +205,7 @@ a.nav__logo {
   div.trick__content {
     padding: 1vw;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    background-color: #ffffff38;
+    background-color: #ffffff;
     }
   /*=================== VARIABLES CSS =======================*/
   :root {
@@ -287,7 +288,7 @@ a.nav__logo {
       margin: var(--header-height) 0 0 0;
       font-family: var(--body-font);
       font-size: var(--normal-font-size);
-      background: var(--body-color);
+      background: #b9888080;
       color: black;
   }
   
@@ -375,6 +376,7 @@ a.nav__logo {
   
   /*================= REUSABLE CSS CLASSES ====================*/
   .section {
+      /* background-color: blue; */
       padding: 24rem 0 3rem;
   }
   
@@ -707,8 +709,8 @@ a.nav__logo {
       grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
       padding-top: 0;
-    margin-top: -50vh;
-
+      background-color: blue;
+      margin-top: -50vh;
 }
 
 
@@ -717,8 +719,8 @@ a.nav__logo {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
     padding-top: 0;
-  margin-top: -50vh;
-
+    background-color: #e9c7c7;
+    margin-top: -50vh;
 }
   
   .trick__content {
