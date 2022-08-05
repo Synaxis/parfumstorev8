@@ -5,7 +5,13 @@ a.nav__logo {
     margin-left: -2vw;
   }
 
-
+  .TitleMenuMobile {
+    color:
+    white;
+    font-size: 1.3em;
+    display: inline-flex;
+    font-weight: bold;
+}
 
   .js-Carousel {
     background: white;
@@ -443,7 +449,7 @@ a.nav__logo {
   }
   
   .nav__toggle {
-      font-size: 1.25rem;
+      font-size: 1.55rem;
       cursor: pointer;
   }
   
